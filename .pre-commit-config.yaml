@@ -1,0 +1,39 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: check-json
+      - id: check-yaml
+        args:
+          - --allow-multiple-documents
+        exclude: templates/
+      - id: end-of-file-fixer
+      - id: mixed-line-ending
+        args:
+          - --fix=lf
+      - id: trailing-whitespace
+
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.41.0
+    hooks:
+      - id: markdownlint
+        name: Markdownlint
+
+  - repo: https://github.com/adrienverge/yamllint
+    rev: v1.35.1
+    hooks:
+      - id: yamllint
+        args:
+          - --strict
+        exclude: .*/templates/.*\.yaml
+
+  - repo: https://github.com/golangci/golangci-lint
+    rev: v1.61.0
+    hooks:
+      - id: golangci-lint
+
+  - repo: https://github.com/dnephin/pre-commit-golang
+    rev: v0.5.1
+    hooks:
+      - id: go-unit-tests
+        files: ^(go\.mod|.*\.go)$
