@@ -18,7 +18,7 @@ Examples:
 
   # Read parameters from a file and extract template from another file
   gotmpl \
-    /tmp/input.yaml
+    /tmp/input.yaml \
     <(yq '.spec.template.spec.source.helm.values' application-set.yaml)
 
   # Read parameters from a Secret on a Kubernetes cluster and extract template from a file
