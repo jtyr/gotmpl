@@ -24,7 +24,7 @@ func usage(v int) {
 	fmt.Println()
 	fmt.Println("  # Read parameters from a file and extract template from another file")
 	fmt.Printf("  %s \\\n", os.Args[0])
-	fmt.Println("    /tmp/input.yaml")
+	fmt.Println("    /tmp/input.yaml \\")
 	fmt.Println("    <(yq '.spec.template.spec.source.helm.values' application-set.yaml)")
 	fmt.Println()
 	fmt.Println("  # Read parameters from a Secret on a Kubernetes cluster and extract template from a file")
