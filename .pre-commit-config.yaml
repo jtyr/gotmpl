@@ -28,7 +28,7 @@ repos:
         exclude: .*/templates/.*\.yaml
 
   - repo: https://github.com/golangci/golangci-lint
-    rev: v1.63.3
+    rev: v1.63.4
     hooks:
       - id: golangci-lint
 
