@@ -20,7 +20,7 @@ repos:
         name: Markdownlint
 
   - repo: https://github.com/adrienverge/yamllint
-    rev: v1.37.0
+    rev: v1.37.1
     hooks:
       - id: yamllint
         args:
