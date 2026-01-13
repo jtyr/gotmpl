@@ -3,7 +3,7 @@ module github.com/jtyr/gotmpl
 go 1.23.2
 
 require (
-	github.com/onsi/gomega v1.38.3
+	github.com/onsi/gomega v1.39.0
 	gopkg.in/yaml.v3 v3.0.1
 )
 
