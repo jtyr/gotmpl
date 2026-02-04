@@ -2,7 +2,7 @@ module github.com/jtyr/gotmpl
 
 go 1.24.0
 
-toolchain go1.24.12
+toolchain go1.25.7
 
 require (
 	github.com/onsi/gomega v1.39.1
