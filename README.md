@@ -3,11 +3,21 @@
 Tool that helps to template string using [Go
 template](https://pkg.go.dev/text/template).
 
+## Installation
+
+```bash
+go install github.com/jtyr/gotmpl/cmd/gotmpl@latest
+```
+
 ## Usage
 
 ```text
 Usage: gotmpl [--help|--version|<params> <tmpl>]
 
+  -help
+        shows this help message
+  -version
+        shows version details
 
 Examples:
   # Read parameters and template like a string
