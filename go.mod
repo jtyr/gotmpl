@@ -5,7 +5,7 @@ go 1.24.0
 toolchain go1.26.4
 
 require (
-	github.com/onsi/gomega v1.41.0
+	github.com/onsi/gomega v1.42.0
 	gopkg.in/yaml.v3 v3.0.1
 )
 
